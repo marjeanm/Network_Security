@@ -1,0 +1,69 @@
+# Evaluation and Recommendations for Network Security
+
+## 1. Introduction
+
+### 1.1 Purpose of the Evaluation
+The purpose of this evaluation is to recommend a solution to address recent security issues at your grocery stores. There have been multiple incidents of possible tampering with inventory at several locations, resulting in discrepancies in purchasing transactions and logging of inventory changes. After analyzing your network, I have determined a resolution that will mitigate these issues.
+
+### 1.2 Overview of the Problem
+Due to these intrusions and tampering incidents at stores across the country, it has become evident that the inventory and data you depend on have been compromised. I have concluded that both an Intrusion Detection System (IDS) and an Intrusion Prevention System (IPS) would best fit your needs to mitigate these technical security issues.
+
+## 2. Current Network Security Analysis
+
+### 2.1 Incident Overview
+The ongoing tampering incidents with inventory and transaction data at various stores indicate that the centralized information network is vulnerable. Multiple stores with limited on-site security monitoring are exposed to these threats.
+
+### 2.2 Impact on Inventory and Data Security
+With data tampering impacting inventory and transaction records, it has become difficult to trust the accuracy of key business data. This poses a significant risk to operations, requiring immediate action to protect against further disruptions.
+
+## 3. Recommended Security Solutions
+
+### 3.1 Intrusion Detection and Prevention Systems (IDS/IPS)
+Given the structure of your business, which includes multiple stores and a centralized information network, I recommend implementing both an Intrusion Detection System (IDS) and an Intrusion Prevention System (IPS). This dual approach will help monitor and protect the network against unauthorized access or malicious activity.
+
+### 3.2 Defense in Depth Strategy
+A defense-in-depth approach is essential to secure your network. According to the Industrial Control Systems Cyber Emergency Response Team (2016), "Defense in Depth employs a holistic approach to protect all assets, while taking into consideration its interconnections and dependencies." This method creates multiple layers of defense, making it significantly harder for bad actors to penetrate your network.
+
+## 4. Network Intrusion Detection Systems (NIDS)
+
+### 4.1 Splunk Cloud Platform
+Splunk is a powerful cloud platform that can serve as a Network Intrusion Detection System (NIDS). It offers data collection, real-time analysis, monitoring, and alerts to track system and network health. With visualization tools, Splunk provides dashboards for easy decision-making and includes machine learning to prevent potential issues. As a cloud-based service, it minimizes hardware needs and offers scalability, which would benefit your organization given your multiple stores and centralized network.
+
+### 4.2 Other NIDS Solutions: Snort
+For a lower-cost option, Snort, an open-source NIDS maintained by Cisco, can be considered. It offers real-time traffic analysis and intrusion detection with three operational modes: packet sniffer, packet logger, and intrusion detection. While Snort may require more hands-on management, it is highly customizable and has a vast library of rules from the community, making it a flexible and affordable solution.
+
+## 5. Host Intrusion Detection Systems (HIDS)
+
+### 5.1 Juniper Networks IPS
+A Host Intrusion Prevention System (HIPS) from Juniper Networks offers robust protection by comparing network traffic against known threat signatures and actively blocking malicious traffic. This system goes beyond simple detection by breaking connections and dropping harmful traffic before it can cause damage.
+
+### 5.2 SolarWinds HIDS Solutions
+SolarWinds offers a low-cost HIDS option through their Papertrail service. It collects logs, correlates events, and automatically detects security threats. While SolarWinds faced public scrutiny due to a compromised update with their Orion software, it is clear they have learned from this incident and are committed to stronger, more secure products moving forward. This makes SolarWinds an appealing choice for advanced threat detection and event correlation.
+
+## 6. Cost Considerations
+
+### 6.1 Budgetary Constraints
+Understanding that marketing is prioritized before tools, and that tools are often tested out-of-the-box, budget constraints are an important factor. While Splunk offers a comprehensive solution, it may exceed the available budget. Therefore, I have also recommended alternative options, such as Snort for network security and SolarWinds Papertrail for host-based security.
+
+### 6.2 Alternative Low-Cost Solutions
+For smaller budgets, Snort and SolarWinds offer a cost-effective approach without compromising too much on security. These tools require more hands-on management but are flexible, with strong community support and educational resources that will help your specialists learn to use them effectively.
+
+## 7. POS System Security Recommendations
+
+### 7.1 Microsoft Defender for Business
+Each Point-of-Sale (POS) system should be protected with Microsoft Defender for Business. Defender is a low-cost solution that offers strong antimalware and antivirus protection. It also includes manual response actions, attack surface reduction capabilities, and centralized management through the Microsoft Defender portal. This is an affordable option for protecting individual devices and ensuring basic endpoint security.
+
+### 7.2 Plan Options and Features
+Microsoft offers two Defender plans:
+- **Plan 1**, priced at $3 per user per month, provides basic threat detection, malware protection, and centralized management.
+- **Plan 2**, priced at $5.20 per user per month, adds advanced threat detection, automated investigation, and remediation capabilities.
+
+These options allow you to choose the level of protection based on your budget and security needs.
+
+## 8. Conclusion
+
+### 8.1 Summary of Recommended Approach
+To protect against inventory tampering and network intrusion, I recommend a combination of Network Intrusion Detection Systems (NIDS) and Host Intrusion Detection Systems (HIDS), utilizing a defense-in-depth strategy. Splunk provides an effective, cloud-based option for NIDS, while Microsoft Defender and other tools like Snort and SolarWinds offer affordable alternatives for host-based and network security.
+
+### 8.2 Final Thoughts on Defense in Depth
+By implementing a layered security approach with a combination of network, host, and endpoint protection, you will be able to safeguard your network from both external and internal threats. This approach ensures that all entry points are covered, minimizing the risk of further incidents.
