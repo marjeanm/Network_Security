@@ -1,0 +1,64 @@
+# Grocery Store Security Evaluation
+
+## Introduction
+The purpose of this evaluation is to recommend a solution. Your grocery store has experienced incidents involving potential tampering with inventory across several stores, with discrepancies in purchasing transactions and logging inventory changes. I have conducted an analysis of your network and have determined a resolution for your organization.
+
+## Identified Security Issues
+In light of these intrusions and incidents, where stores throughout the country have had their inventory data tampered with, I have concluded that both an Intrusion Detection System (IDS) and an Intrusion Prevention System (IPS) would be the best fit for mitigating your technical security issues.
+
+## Recommendation
+Since you have multiple stores and a centralized information network, I recommend involving the two specialists you have at each store to monitor your network. This should follow a defense-in-depth strategy. As noted by the Industrial Control Systems Cyber Emergency Response Team (2016), *“Defense in Depth employs a holistic approach to protect all assets while taking into consideration its interconnections and dependencies and using an organization’s available resources to provide effective layers of monitoring and protection based on the business’s exposure to cybersecurity risks.”* Creating these layers makes it significantly harder for a bad actor to penetrate your network.
+
+## Layered Security Approach
+With this layered approach, you will be able to create alerts based on network intrusions and individual host prevention. This means you can establish network-based policies that analyze various systems, such as servers and devices accessing data on your network. Combining this with host-based systems will protect individual machines, and these systems will be able to analyze encrypted data.
+
+## Network Intrusion Detection Systems
+
+There are several network intrusion detection systems, such as Splunk and other platforms.
+
+### Splunk
+Splunk is a cloud platform that performs the following tasks (Wickramasinghe, 2024):
+- **Data Collection and Ingestion**: Collects and ingests data from various sources, including logs, metrics, and events, at scale.
+- **Data Search and Analysis**: Allows users to search and analyze data in real-time and historical contexts, helping gain insights into operations.
+- **Monitoring and Alerting**: Provides monitoring capabilities to track the health and performance of systems, applications, and networks, and generates alerts based on predefined conditions.
+- **Dashboards and Visualization**: Offers powerful visualization tools to create dashboards that present data in an easily understandable format, enabling data-driven decisions.
+- **Machine Learning**: Incorporates machine learning to predict and prevent potential issues, enhancing security and performance.
+- **Cloud-Based Services**: Delivers all these functionalities as a cloud service, providing flexibility and scalability.
+- **Self-Service Capabilities**: Users have options to customize data retention settings, user roles, authentication, and more.
+- **Security and Compliance**: Ensures data security and compliance with various regulations, offering robust access controls and monitoring.
+
+### Host-Based Intrusion Prevention System (HIPS)
+
+In combination with a Host-based Intrusion Prevention System (HIPS), such as Juniper Networks, you get comprehensive protection.
+
+#### Juniper Networks
+Juniper Networks (2024) defines HIPS as: “A security measure that detects and prevents potential incidents on a network. It works by comparing network traffic against signatures of known threats and blocking any traffic that matches these signatures. Unlike an Intrusion Detection System (IDS), which only detects and alerts potential threats, an IPS actively intervenes to stop the detected threats by breaking the connection and dropping the malicious traffic.”
+
+With Splunk, you get a combination of software protection and a cloud-based system, so setup and control require minimal hardware. This is a bigger cost to the company, but it is a centralized tool that can be managed at a granular level by the specialists within the stores or centrally from your headquarters in Maryland.
+
+## Cost Considerations
+I understand that cost is a concern, as marketing is prioritized over tools, and tools are typically out-of-the-box and tested throughout your network. If you cannot negotiate with the budget, there are alternative options available.
+
+## Alternative Options
+- **Snort**: A free, open-source Network Intrusion Detection System (NIDS) maintained by Cisco. It is compatible with Windows and Linux and analyzes real-time traffic. It operates in three modes:
+  - Packet Sniffer
+  - Packet Logger
+  - Intrusion Detection
+  However, intrusion detection is based on rules you create or download from the community. As an open-source platform, there are plenty of educational resources, and it is easy to learn and train your staff.
+  
+- **SolarWinds**: Offers a low-cost Host-based Intrusion Detection System (HIDS) called Papertrail. Some features include:
+  - On-premises deployment for full control over the security environment.
+  - Log collection and consolidation from multiple sources for comprehensive monitoring.
+  - Event correlation to detect complex threats.
+  - Automated threat detection and manual analysis options for detailed log reviews.
+
+Although SolarWinds faced a significant incident with its Orion software, where code poisoning compromised several customers, I believe the company has learned valuable lessons from this event. The key is not whether incidents happen, but how they are handled. With this HIDS, there is a steeper learning curve. However, with specialists in your stores, you’ll be able to leverage the system's advanced features to your advantage, while the centralized team handles network-wide security.
+
+- **Microsoft Defender for Business**: Lastly, as part of the defense-in-depth approach, each POS system should be equipped with Microsoft Defender for Business, a low-cost option (Microsoft, 2024):
+  - **Plan 1**: Priced at $3 per user per month, includes basic threat detection and response features.
+  - **Plan 2**: Priced at $5.20 per user per month, includes advanced threat detection, automated investigation, and response capabilities.
+
+This solution will allow you to implement Next-Generation Protection and Endpoint Detection and Response, providing comprehensive protection against emerging threats.
+
+## Conclusion
+Using an adversarial mindset, this approach aligns with CIS controls to create a layered strategy involving network and host protection, as well as added layers for BYOD policies. This comprehensive view of your network minimizes potential attack surfaces. As a result, auditing network activity and identifying inventory tampering or internal and external threats will become more manageable.
