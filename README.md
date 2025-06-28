@@ -1,75 +1,77 @@
-# Grocery Store Security Evaluation and Recommendations
+# Network Security: IDS/IPS Evaluation and Defense-in-Depth Strategy
 
-## Introduction
+This project presents a security evaluation and layered defense strategy for a fictional grocery store chain facing internal tampering threats. It includes a professional-grade recommendation report with cost-effective intrusion detection and prevention options, designed for real-world network protection.
 
-The purpose of this evaluation is to recommend a solution for mitigating potential tampering with inventory across several stores in your grocery chain. Incidents involving discrepancies in purchasing transactions and logging inventory changes have been identified. An analysis of your network has led to a proposed resolution aimed at enhancing your network security and preventing further tampering.
+---
 
-## Identified Security Issues
+## 📌 Project Summary
 
-The ongoing incidents, involving tampering with inventory data across multiple stores, have highlighted significant vulnerabilities in your network infrastructure. After careful analysis, it is recommended that both an **Intrusion Detection System (IDS)** and an **Intrusion Prevention System (IPS)** be implemented as a first line of defense against these technical security issues.
+🛒 **Use Case**: Detect and prevent inventory tampering across multiple stores  
+🔍 **Core Focus**: Intrusion Detection Systems (IDS), Intrusion Prevention Systems (IPS), Host-based and Network-based protections  
+💡 **Strategy**: Defense-in-depth recommendation combining layered tools and staffing practices for continuous monitoring
 
-## Recommendation
+---
 
-Given that your organization operates multiple stores with a centralized information network, a defense-in-depth strategy is advised. This approach, as described by the **Industrial Control Systems Cyber Emergency Response Team (2016)**, employs a multi-layered security strategy to protect all assets, interconnections, and dependencies, using available resources to provide effective monitoring and protection.
+## 🔐 Key Security Concepts Covered
 
-I recommend leveraging the two specialists available at each store to monitor the network, ensuring constant vigilance at both the network and host levels.
+### 🔎 Network-Based Intrusion Detection Systems (NIDS)
 
-### Layered Security Approach
+- **Splunk**: Cloud-based monitoring, alerting, and ML-powered detection  
+- **Snort**: Free, open-source IDS with custom rule creation  
+- **SolarWinds**: On-prem HIDS with log correlation (cost-effective alternative)
 
-By adopting this layered security approach, you can set up alerts based on network intrusions and individual host prevention. This includes:
+### 🛡️ Host-Based Intrusion Prevention Systems (HIPS)
 
-- **Network-based policies** to analyze and secure systems such as servers and devices accessing your network.
-- **Host-based systems** to protect individual machines and secure encrypted data.
+- **Juniper Networks**: Active threat blocking on endpoints  
+- **Microsoft Defender for Business**: POS-focused protection plans with automated investigation and response
 
-## Network Intrusion Detection Systems (NIDS)
+---
 
-### Splunk
+## 🧠 Security Strategy: Defense-in-Depth
 
-Splunk offers a cloud-based platform for network intrusion detection. Key features include:
+The proposed solution follows a **multi-layered approach**:
 
-- **Data Collection & Ingestion:** Ingests data from various sources, including logs and events, at scale.
-- **Data Search & Analysis:** Provides real-time and historical data search and analysis.
-- **Monitoring & Alerting:** Monitors system health and generates alerts based on predefined conditions.
-- **Dashboards & Visualization:** Allows users to create dashboards for easy data visualization.
-- **Machine Learning:** Predicts and prevents potential issues.
-- **Cloud-Based Services:** Scalable and flexible solution.
-- **Security & Compliance:** Ensures regulatory compliance and robust data security.
+1. **Network Monitoring** – Detect anomalous traffic across sites  
+2. **Host Protection** – Stop attacks at the endpoint level (POS & terminals)  
+3. **Event Correlation** – Visual dashboards for analysts to review  
+4. **Redundancy in Monitoring** – Two security specialists per store to maintain visibility and act as human firewalls
 
-### Host-Based Intrusion Prevention Systems (HIPS)
+---
 
-Combining **Splunk** with a **Host-based Intrusion Prevention System (HIPS)** such as **Juniper Networks** ensures comprehensive protection. Key features of HIPS:
+## 💸 Cost-Sensitive Recommendations
 
-- **Traffic Analysis:** Detects and prevents malicious traffic by comparing network activity with known threat signatures.
-- **Active Intervention:** Unlike IDS, IPS actively intervenes to stop threats by blocking malicious traffic.
+| Tool                         | Type    | Approx Cost        | Notes                          |
+|------------------------------|---------|--------------------|---------------------------------|
+| Snort                        | NIDS    | Free (open source) | Highly customizable            |
+| SolarWinds HIDS              | HIDS    | $$ (License)       | On-premise, event correlation  |
+| Microsoft Defender for Biz   | EDR     | $3–$5.20/user/mo   | Ideal for POS & endpoints      |
+| Splunk                       | NIDS    | $$$ (Cloud-based)  | Enterprise-scale, scalable     |
 
-Splunk provides centralized control and minimal hardware requirements, making it an ideal solution for your stores. Although this solution may incur a higher cost, it offers granular control and flexibility.
+---
 
-## Cost Considerations
+## 📂 Repo Structure
+![Screenshot 2025-06-28 113711](https://github.com/user-attachments/assets/38ffff08-a03b-4538-bde6-99d60de09c26)
 
-Considering your organization's focus on marketing over security tools, there are more cost-effective alternatives to Splunk and Juniper Networks.
 
-### Alternative Options
+---
 
-- **Snort:** A free, open-source NIDS developed by Cisco. It operates in three modes:
-  - Packet Sniffer
-  - Packet Logger
-  - Intrusion Detection
-  
-  Snort allows you to create or download custom rules, with plenty of educational resources available.
+## 🧩 Use Cases
 
-- **SolarWinds:** A low-cost HIDS solution, offering:
-  - On-premises deployment for full control.
-  - Event correlation and automated threat detection.
-  - Comprehensive log collection and analysis.
-  
-  Despite its past incident with the Orion software, SolarWinds has improved security, and with store specialists monitoring the system, it can be a valuable tool.
+- 💼 SMB security consulting  
+- 🧪 Cybersecurity analyst portfolio piece  
+- 🧱 Layered defense architecture planning  
+- 🛒 Retail and POS protection strategy
 
-- **Microsoft Defender for Business:** A low-cost endpoint protection solution for POS systems:
-  - **Plan 1:** $3 per user/month (basic threat detection and response).
-  - **Plan 2:** $5.20 per user/month (advanced threat detection, automated investigation, and response).
+---
 
-## Conclusion
+## 👩🏽‍💻 Author
 
-By adopting a **defense-in-depth strategy**, involving both **network** and **host protection**, your grocery store chain can significantly enhance its security posture. A combination of IDS and IPS solutions, along with endpoint protection for each POS system, will allow for early detection of threats, prevent inventory tampering, and secure your organization's network from both internal and external threats.
+**Marjean Mayo-Baker**  
+Cybersecurity Engineer | Risk Evaluator | SecOps Strategist  
+[LinkedIn](https://linkedin.com/in/marjean-mayo-baker)
 
-This layered approach will reduce potential attack surfaces, making it easier to audit network activity, identify suspicious behavior, and respond to cybersecurity risks efficiently.
+---
+
+> *“Security isn’t just about tools—it’s about knowing where to place them, why they matter, and how to explain them to decision-makers.”*
+
+
